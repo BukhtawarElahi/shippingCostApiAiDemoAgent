@@ -4,7 +4,7 @@ import urllib
 import json
 import os
 
-from flask import Flask
+from flask import Flask,request
 from flask import request
 from flask import make_response
 
@@ -51,7 +51,8 @@ def makeWebhookResult(req):
 
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
+app.run()
+    #port = int(os.getenv('PORT', 5000))
 
     print("Starting app on port %d" % port)
 
